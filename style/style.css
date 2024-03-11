@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #4d4d4d;
+}
+.todoContainer {
+  width: 450px;
+  border-radius: 15px;
+  box-shadow: -20px 20px 60px #414141, 20px -20px 60px #414141;
+  padding: 10px;
+}
+.addActions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.addActions input,
+.addActions button {
+  all: unset;
+  border: 1px solid rgb(187, 187, 187);
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 22px;
+  color: rgb(209, 208, 208);
+}
+.addActions button:hover {
+  background: rgb(187, 187, 187);
+  color: #4d4d4d;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.todoItemContainer {
+  margin-top: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 0 30px;
+}
+.todoItem {
+  border: 1px solid rgb(99, 98, 98);
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: rgb(209, 208, 208);
+  padding: 2px 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todoItem.completed {
+  border: 1px solid rgb(68, 205, 68);
+  background: rgb(42, 101, 42);
+}
+.material-symbols-outlined {
+  font-size: 22px !important;
+  padding: 0 5px;
+}
